@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.solrom.edgar.mismapas.MainActivity">
+
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/naucalli"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/parquenaucalli"
+                android:onClick="mostrarMapa"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Parque Naucalli"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageButton
+                android:id="@+id/alamedaNorte"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/parquealamedanorte"
+                android:onClick="mostrarMapa"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Alameda Norte"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/bicentenario"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/parquebicentenario"
+                android:onClick="mostrarMapa"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Parque Bicentenario"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/plansexenal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/parqueplansexenal"
+                android:onClick="mostrarMapa"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Plan Sexenal"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+
+</RelativeLayout>
