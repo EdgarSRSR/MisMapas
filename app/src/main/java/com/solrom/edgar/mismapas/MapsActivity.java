@@ -16,6 +16,8 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+// establishes the actions to show the maps
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
 
     private GoogleMap mMap;
@@ -35,21 +37,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Bundle extras = getIntent().getExtras();
         if(extras != null)
         {
+            // latitude, if it can't find it shows a message that says "didn't find latitude"
             latitud = extras.getDouble("latitud");
             if(latitud == null){
                 Toast.makeText(this, "No se encuentra la latitud.", Toast.LENGTH_SHORT).show();
                 return;
             }
-
+            // longitude, if it can't find it shows a message that says "didn't find longitude"
             longitud = extras.getDouble("longitud");
             if(longitud == null){
                 Toast.makeText(this, "No se encuentra la longitud.", Toast.LENGTH_SHORT).show();
                 return;
             }
-
+            // place, if it can't find it shows a message that says "didn't find place"
             lugar = extras.getString("lugar");
             if(lugar == null){
-                Toast.makeText(this, "No shay descripción de este lugar.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "No hay descripción de este lugar.", Toast.LENGTH_SHORT).show();
                 return;
             }
 
