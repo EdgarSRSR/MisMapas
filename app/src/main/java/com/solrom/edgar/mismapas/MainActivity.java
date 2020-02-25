@@ -5,6 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+/*
+    
+    Creates maps with locations
+    
+*/
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }*/
 
-
+    // show maps
     public void mostrarMapa(View v){
         int ImageView = v.getId();
 
         switch (ImageView){
             case R.id.naucalli:
+                // creates maps by introducing coordinates and a given name
                 crearIntentMapa(MapsActivity.class, 19.49161800380091, -99.24013511684575, "Parque Naucalli");
                         break;
             case R.id.alamedaNorte:
